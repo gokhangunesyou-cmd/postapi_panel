@@ -4,7 +4,7 @@
     "description": "Extension name displayed in Chrome"
   },
   "extDescription": {
-    "message": "A powerful Postman-like developer tool for Chrome. Send requests, manage collections, inspect headers, cookies, and more — right from your browser.",
+    "message": "Postman-like API client for Chrome. Send requests, manage collections, capture network traffic and inspect headers & cookies.",
     "description": "Extension description for Chrome Web Store"
   },
 

@@ -4,7 +4,7 @@
     "description": "Eklenti adı"
   },
   "extDescription": {
-    "message": "Chrome için güçlü bir Postman benzeri geliştirici aracı. İstek gönderin, koleksiyonları yönetin, başlıkları, çerezleri ve daha fazlasını doğrudan tarayıcınızdan inceleyin.",
+    "message": "Chrome için Postman benzeri API istemcisi. İstek gönderin, koleksiyonları yönetin, ağ trafiğini ve başlıkları inceleyin.",
     "description": "Chrome Web Mağazası için eklenti açıklaması"
   },
 
