@@ -1,0 +1,700 @@
+{
+  "extName": {
+    "message": "PostAPI Panel",
+    "description": "اسم الإضافة"
+  },
+  "extDescription": {
+    "message": "أداة مطور قوية تشبه Postman لمتصفح Chrome. أرسل الطلبات، وأدِر المجموعات، وافحص الرؤوس والكوكيز والمزيد — مباشرة من متصفحك.",
+    "description": "وصف الإضافة لمتجر Chrome الإلكتروني"
+  },
+
+  "collections": {
+    "message": "المجموعات",
+    "description": "علامة تبويب مجموعات الطلبات المحفوظة"
+  },
+  "history": {
+    "message": "السجل",
+    "description": "علامة تبويب سجل الطلبات"
+  },
+  "environments": {
+    "message": "البيئات",
+    "description": "علامة تبويب متغيرات البيئة"
+  },
+  "cookies": {
+    "message": "الكوكيز",
+    "description": "علامة تبويب إدارة الكوكيز"
+  },
+  "settings": {
+    "message": "الإعدادات",
+    "description": "علامة تبويب إعدادات الإضافة"
+  },
+  "headerManager": {
+    "message": "مدير الرؤوس",
+    "description": "علامة تبويب قواعد تعديل الرؤوس"
+  },
+
+  "send": {
+    "message": "إرسال",
+    "description": "زر إرسال طلب HTTP"
+  },
+  "save": {
+    "message": "حفظ",
+    "description": "زر حفظ الطلب"
+  },
+  "params": {
+    "message": "المعاملات",
+    "description": "علامة تبويب معاملات الاستعلام"
+  },
+  "headers": {
+    "message": "الرؤوس",
+    "description": "علامة تبويب رؤوس الطلب"
+  },
+  "body": {
+    "message": "الجسم",
+    "description": "علامة تبويب جسم الطلب"
+  },
+  "auth": {
+    "message": "المصادقة",
+    "description": "علامة تبويب المصادقة"
+  },
+  "preRequest": {
+    "message": "ما قبل الطلب",
+    "description": "علامة تبويب نصوص ما قبل الطلب"
+  },
+  "method": {
+    "message": "الطريقة",
+    "description": "تسمية محدد طريقة HTTP"
+  },
+  "url": {
+    "message": "الرابط",
+    "description": "تسمية حقل إدخال رابط الطلب"
+  },
+  "addRow": {
+    "message": "إضافة صف",
+    "description": "زر إضافة صف مفتاح-قيمة جديد"
+  },
+  "removeRow": {
+    "message": "إزالة صف",
+    "description": "زر إزالة صف مفتاح-قيمة"
+  },
+  "keyPlaceholder": {
+    "message": "المفتاح",
+    "description": "نص بديل لحقل إدخال المفتاح"
+  },
+  "valuePlaceholder": {
+    "message": "القيمة",
+    "description": "نص بديل لحقل إدخال القيمة"
+  },
+
+  "get": {
+    "message": "GET",
+    "description": "طريقة HTTP GET"
+  },
+  "post": {
+    "message": "POST",
+    "description": "طريقة HTTP POST"
+  },
+  "put": {
+    "message": "PUT",
+    "description": "طريقة HTTP PUT"
+  },
+  "delete": {
+    "message": "DELETE",
+    "description": "طريقة HTTP DELETE"
+  },
+  "patch": {
+    "message": "PATCH",
+    "description": "طريقة HTTP PATCH"
+  },
+  "options": {
+    "message": "OPTIONS",
+    "description": "طريقة HTTP OPTIONS"
+  },
+  "head": {
+    "message": "HEAD",
+    "description": "طريقة HTTP HEAD"
+  },
+
+  "json": {
+    "message": "JSON",
+    "description": "نوع الجسم JSON"
+  },
+  "formData": {
+    "message": "بيانات النموذج",
+    "description": "نوع الجسم بيانات نموذج متعدد الأجزاء"
+  },
+  "urlEncoded": {
+    "message": "مُرمَّز بالرابط",
+    "description": "نوع الجسم application/x-www-form-urlencoded"
+  },
+  "raw": {
+    "message": "خام",
+    "description": "نوع الجسم نص خام"
+  },
+  "binary": {
+    "message": "ثنائي",
+    "description": "نوع الجسم ملف ثنائي"
+  },
+  "none": {
+    "message": "بدون",
+    "description": "بدون جسم / بدون مصادقة"
+  },
+
+  "noAuth": {
+    "message": "بدون مصادقة",
+    "description": "نوع المصادقة: بدون"
+  },
+  "bearerToken": {
+    "message": "رمز Bearer",
+    "description": "نوع المصادقة: رمز bearer"
+  },
+  "basicAuth": {
+    "message": "مصادقة أساسية",
+    "description": "نوع المصادقة: اسم مستخدم/كلمة مرور أساسية"
+  },
+  "apiKey": {
+    "message": "مفتاح API",
+    "description": "نوع المصادقة: مفتاح API"
+  },
+
+  "response": {
+    "message": "الاستجابة",
+    "description": "عنوان قسم منطقة الاستجابة"
+  },
+  "pretty": {
+    "message": "منسّق",
+    "description": "وضع عرض الاستجابة: مُنسَّق"
+  },
+  "rawView": {
+    "message": "خام",
+    "description": "وضع عرض الاستجابة: نص خام"
+  },
+  "preview": {
+    "message": "معاينة",
+    "description": "وضع عرض الاستجابة: معاينة HTML"
+  },
+  "responseHeaders": {
+    "message": "الرؤوس",
+    "description": "علامة تبويب رؤوس الاستجابة"
+  },
+  "responseCookies": {
+    "message": "الكوكيز",
+    "description": "علامة تبويب كوكيز الاستجابة"
+  },
+  "timeline": {
+    "message": "الجدول الزمني",
+    "description": "علامة تبويب توقيت الطلب"
+  },
+  "statusCode": {
+    "message": "الحالة",
+    "description": "تسمية رمز حالة HTTP"
+  },
+  "duration": {
+    "message": "المدة",
+    "description": "تسمية مدة الطلب"
+  },
+  "size": {
+    "message": "الحجم",
+    "description": "تسمية حجم الاستجابة"
+  },
+
+  "newCollection": {
+    "message": "مجموعة جديدة",
+    "description": "زر إنشاء مجموعة جديدة"
+  },
+  "newFolder": {
+    "message": "مجلد جديد",
+    "description": "زر إنشاء مجلد جديد داخل مجموعة"
+  },
+  "saveRequest": {
+    "message": "حفظ الطلب",
+    "description": "زر حفظ الطلب الحالي في مجموعة"
+  },
+  "importCollection": {
+    "message": "استيراد مجموعة",
+    "description": "زر استيراد مجموعة من ملف"
+  },
+  "exportCollection": {
+    "message": "تصدير مجموعة",
+    "description": "زر تصدير مجموعة إلى ملف"
+  },
+  "deleteCollection": {
+    "message": "حذف المجموعة",
+    "description": "إجراء حذف المجموعة"
+  },
+  "renameCollection": {
+    "message": "إعادة تسمية المجموعة",
+    "description": "إجراء إعادة تسمية المجموعة"
+  },
+  "duplicateCollection": {
+    "message": "تكرار المجموعة",
+    "description": "إجراء تكرار المجموعة"
+  },
+  "collectionName": {
+    "message": "اسم المجموعة",
+    "description": "نص بديل/تسمية لحقل إدخال اسم المجموعة"
+  },
+  "folderName": {
+    "message": "اسم المجلد",
+    "description": "نص بديل/تسمية لحقل إدخال اسم المجلد"
+  },
+  "requestName": {
+    "message": "اسم الطلب",
+    "description": "نص بديل/تسمية لحقل إدخال اسم الطلب"
+  },
+  "noCollections": {
+    "message": "لا توجد مجموعات بعد. أنشئ واحدة للبدء.",
+    "description": "رسالة الحالة الفارغة للمجموعات"
+  },
+
+  "clearHistory": {
+    "message": "مسح السجل",
+    "description": "زر مسح جميع إدخالات السجل"
+  },
+  "today": {
+    "message": "اليوم",
+    "description": "تسمية مجموعة سجل اليوم"
+  },
+  "yesterday": {
+    "message": "أمس",
+    "description": "تسمية مجموعة سجل أمس"
+  },
+  "lastWeek": {
+    "message": "الأسبوع الماضي",
+    "description": "تسمية مجموعة سجل الأسبوع الماضي"
+  },
+  "older": {
+    "message": "أقدم",
+    "description": "تسمية مجموعة الإدخالات الأقدم"
+  },
+  "noHistory": {
+    "message": "لا يوجد سجل طلبات بعد. أرسل طلبًا لرؤيته هنا.",
+    "description": "رسالة الحالة الفارغة للسجل"
+  },
+
+  "newEnvironment": {
+    "message": "بيئة جديدة",
+    "description": "زر إنشاء بيئة جديدة"
+  },
+  "globalVariables": {
+    "message": "المتغيرات العامة",
+    "description": "تسمية نطاق المتغيرات العامة"
+  },
+  "variableName": {
+    "message": "اسم المتغير",
+    "description": "نص بديل لحقل إدخال اسم المتغير"
+  },
+  "variableValue": {
+    "message": "قيمة المتغير",
+    "description": "نص بديل لحقل إدخال قيمة المتغير"
+  },
+  "secretValue": {
+    "message": "قيمة سرية",
+    "description": "تسمية قيم المتغيرات السرية المُقنَّعة"
+  },
+  "activeEnvironment": {
+    "message": "البيئة النشطة",
+    "description": "تسمية البيئة النشطة حاليًا"
+  },
+  "noEnvironments": {
+    "message": "لا توجد بيئات بعد. أنشئ واحدة لإدارة المتغيرات.",
+    "description": "رسالة الحالة الفارغة للبيئات"
+  },
+
+  "addCookie": {
+    "message": "إضافة كوكي",
+    "description": "زر إضافة كوكي جديد"
+  },
+  "deleteCookie": {
+    "message": "حذف الكوكي",
+    "description": "زر حذف الكوكي"
+  },
+  "cookieName": {
+    "message": "اسم الكوكي",
+    "description": "تسمية/نص بديل لاسم الكوكي"
+  },
+  "cookieValue": {
+    "message": "قيمة الكوكي",
+    "description": "تسمية/نص بديل لقيمة الكوكي"
+  },
+  "cookieDomain": {
+    "message": "النطاق",
+    "description": "تسمية نطاق الكوكي"
+  },
+  "cookiePath": {
+    "message": "المسار",
+    "description": "تسمية مسار الكوكي"
+  },
+  "httpOnly": {
+    "message": "HttpOnly",
+    "description": "تسمية علامة HttpOnly للكوكي"
+  },
+  "secure": {
+    "message": "آمن",
+    "description": "تسمية علامة الأمان للكوكي"
+  },
+  "sameSite": {
+    "message": "SameSite",
+    "description": "تسمية خاصية SameSite للكوكي"
+  },
+  "expires": {
+    "message": "تاريخ الانتهاء",
+    "description": "تسمية تاريخ انتهاء الكوكي"
+  },
+  "editCookie": {
+    "message": "تعديل الكوكي",
+    "description": "إجراء تعديل الكوكي"
+  },
+  "cookieJar": {
+    "message": "وعاء الكوكيز",
+    "description": "تسمية مفهوم وعاء الكوكيز"
+  },
+  "saveCookieJar": {
+    "message": "حفظ وعاء الكوكيز",
+    "description": "زر حفظ وعاء الكوكيز"
+  },
+  "loadCookieJar": {
+    "message": "تحميل وعاء الكوكيز",
+    "description": "زر تحميل وعاء كوكيز محفوظ"
+  },
+
+  "headerRules": {
+    "message": "قواعد الرؤوس",
+    "description": "عنوان قسم قواعد تعديل الرؤوس"
+  },
+  "addRule": {
+    "message": "إضافة قاعدة",
+    "description": "زر إضافة قاعدة رأس جديدة"
+  },
+  "ruleEnabled": {
+    "message": "القاعدة مُفعَّلة",
+    "description": "مفتاح تفعيل/تعطيل القاعدة"
+  },
+  "urlPattern": {
+    "message": "نمط الرابط",
+    "description": "تسمية نمط مطابقة الرابط في قواعد الرؤوس"
+  },
+  "headerName": {
+    "message": "اسم الرأس",
+    "description": "تسمية حقل إدخال اسم الرأس"
+  },
+  "headerValue": {
+    "message": "قيمة الرأس",
+    "description": "تسمية حقل إدخال قيمة الرأس"
+  },
+  "actionSet": {
+    "message": "تعيين",
+    "description": "إجراء قاعدة الرأس: تعيين/استبدال"
+  },
+  "actionRemove": {
+    "message": "إزالة",
+    "description": "إجراء قاعدة الرأس: إزالة الرأس"
+  },
+  "actionAppend": {
+    "message": "إلحاق",
+    "description": "إجراء قاعدة الرأس: إلحاق قيمة"
+  },
+  "headerProfiles": {
+    "message": "ملفات تعريف الرؤوس",
+    "description": "قسم ملفات تعريف الرؤوس المحفوظة"
+  },
+  "newProfile": {
+    "message": "ملف تعريف جديد",
+    "description": "زر إنشاء ملف تعريف رأس جديد"
+  },
+  "silentMode": {
+    "message": "الوضع الصامت",
+    "description": "مفتاح تعديل الرؤوس الصامت"
+  },
+  "advancedMode": {
+    "message": "الوضع المتقدم",
+    "description": "مفتاح خيارات قواعد الرؤوس المتقدمة"
+  },
+
+  "replay": {
+    "message": "إعادة التشغيل",
+    "description": "إجراء إعادة تشغيل الطلب"
+  },
+  "editAndReplay": {
+    "message": "تعديل وإعادة التشغيل",
+    "description": "إجراء تعديل وإعادة إرسال الطلب"
+  },
+  "copyAsCurl": {
+    "message": "نسخ كأمر cURL",
+    "description": "إجراء نسخ الطلب كأمر cURL"
+  },
+  "copyAsCode": {
+    "message": "نسخ ككود",
+    "description": "إجراء نسخ الطلب كمقتطف كود"
+  },
+  "clearAll": {
+    "message": "مسح الكل",
+    "description": "إجراء مسح جميع العناصر"
+  },
+  "cancel": {
+    "message": "إلغاء",
+    "description": "تسمية زر الإلغاء"
+  },
+  "confirm": {
+    "message": "تأكيد",
+    "description": "تسمية زر التأكيد"
+  },
+  "deleteAction": {
+    "message": "حذف",
+    "description": "تسمية زر إجراء الحذف"
+  },
+  "edit": {
+    "message": "تعديل",
+    "description": "تسمية زر إجراء التعديل"
+  },
+  "duplicate": {
+    "message": "تكرار",
+    "description": "تسمية زر إجراء التكرار"
+  },
+  "search": {
+    "message": "بحث",
+    "description": "نص بديل لحقل البحث"
+  },
+  "filter": {
+    "message": "تصفية",
+    "description": "زر/تسمية التصفية"
+  },
+  "import_": {
+    "message": "استيراد",
+    "description": "زر إجراء الاستيراد"
+  },
+  "export_": {
+    "message": "تصدير",
+    "description": "زر إجراء التصدير"
+  },
+  "openFullscreen": {
+    "message": "فتح بملء الشاشة",
+    "description": "زر فتح الإضافة في علامة تبويب كاملة"
+  },
+
+  "capturedRequests": {
+    "message": "الطلبات المُلتقَطة",
+    "description": "عنوان قسم التقاط الشبكة"
+  },
+  "noRequests": {
+    "message": "لم يتم التقاط أي طلبات بعد. تصفح صفحة لرؤية نشاط الشبكة.",
+    "description": "حالة فارغة لالتقاط الشبكة"
+  },
+  "intercepting": {
+    "message": "جارٍ الاعتراض",
+    "description": "تسمية الحالة عند اعتراض الطلبات بنشاط"
+  },
+  "paused": {
+    "message": "متوقف مؤقتًا",
+    "description": "تسمية الحالة عند إيقاف الاعتراض مؤقتًا"
+  },
+  "startCapture": {
+    "message": "بدء الالتقاط",
+    "description": "زر بدء التقاط طلبات الشبكة"
+  },
+  "stopCapture": {
+    "message": "إيقاف الالتقاط",
+    "description": "زر إيقاف التقاط طلبات الشبكة"
+  },
+  "clearCaptured": {
+    "message": "مسح المُلتقَط",
+    "description": "زر مسح الطلبات المُلتقَطة"
+  },
+
+  "settingsTitle": {
+    "message": "الإعدادات",
+    "description": "عنوان صفحة الإعدادات"
+  },
+  "darkMode": {
+    "message": "الوضع الداكن",
+    "description": "خيار السمة: داكن"
+  },
+  "lightMode": {
+    "message": "الوضع الفاتح",
+    "description": "خيار السمة: فاتح"
+  },
+  "language": {
+    "message": "اللغة",
+    "description": "تسمية محدد اللغة"
+  },
+  "autoCleanup": {
+    "message": "التنظيف التلقائي",
+    "description": "تسمية مفتاح التنظيف التلقائي"
+  },
+  "cleanupDays": {
+    "message": "التنظيف بعد (أيام)",
+    "description": "تسمية إعداد فترة التنظيف"
+  },
+  "maxHistoryItems": {
+    "message": "الحد الأقصى لعناصر السجل",
+    "description": "تسمية إعداد الحد الأقصى لعناصر السجل"
+  },
+
+  "originalResponse": {
+    "message": "الاستجابة الأصلية",
+    "description": "تسمية الاستجابة الأصلية في عرض الفرق"
+  },
+  "replayedResponse": {
+    "message": "الاستجابة المُعاد تشغيلها",
+    "description": "تسمية الاستجابة المُعاد تشغيلها في عرض الفرق"
+  },
+  "diffView": {
+    "message": "عرض الفروقات",
+    "description": "تسمية عرض مقارنة الفروقات"
+  },
+
+  "loading": {
+    "message": "جارٍ التحميل...",
+    "description": "نص حالة التحميل"
+  },
+  "error": {
+    "message": "خطأ",
+    "description": "تسمية الخطأ"
+  },
+  "success": {
+    "message": "نجاح",
+    "description": "تسمية النجاح"
+  },
+  "saved": {
+    "message": "تم الحفظ",
+    "description": "تأكيد الحفظ"
+  },
+  "deleted": {
+    "message": "تم الحذف",
+    "description": "تأكيد الحذف"
+  },
+  "copied": {
+    "message": "تم النسخ",
+    "description": "تأكيد النسخ"
+  },
+  "name": {
+    "message": "الاسم",
+    "description": "تسمية الاسم العامة"
+  },
+  "description": {
+    "message": "الوصف",
+    "description": "تسمية الوصف العامة"
+  },
+  "created": {
+    "message": "تاريخ الإنشاء",
+    "description": "تسمية الطابع الزمني للإنشاء"
+  },
+  "updated": {
+    "message": "تاريخ التحديث",
+    "description": "تسمية الطابع الزمني للتحديث"
+  },
+  "type": {
+    "message": "النوع",
+    "description": "تسمية النوع العامة"
+  },
+  "value": {
+    "message": "القيمة",
+    "description": "تسمية القيمة العامة"
+  },
+  "enabled": {
+    "message": "مُفعَّل",
+    "description": "تسمية الحالة المُفعَّلة"
+  },
+  "disabled": {
+    "message": "مُعطَّل",
+    "description": "تسمية الحالة المُعطَّلة"
+  },
+
+  "requestSent": {
+    "message": "تم إرسال الطلب بنجاح",
+    "description": "رسالة إشعار بعد إرسال الطلب"
+  },
+  "requestSaved": {
+    "message": "تم حفظ الطلب في المجموعة",
+    "description": "رسالة إشعار بعد حفظ الطلب"
+  },
+  "collectionCreated": {
+    "message": "تم إنشاء المجموعة",
+    "description": "رسالة إشعار بعد إنشاء المجموعة"
+  },
+  "environmentSaved": {
+    "message": "تم حفظ البيئة",
+    "description": "رسالة إشعار بعد حفظ البيئة"
+  },
+  "headerRuleAdded": {
+    "message": "تمت إضافة قاعدة الرأس",
+    "description": "رسالة إشعار بعد إضافة قاعدة رأس"
+  },
+  "cookieAdded": {
+    "message": "تمت إضافة الكوكي",
+    "description": "رسالة إشعار بعد إضافة كوكي"
+  },
+  "copiedToClipboard": {
+    "message": "تم النسخ إلى الحافظة",
+    "description": "رسالة إشعار بعد النسخ إلى الحافظة"
+  },
+  "importSuccess": {
+    "message": "تم الاستيراد بنجاح",
+    "description": "رسالة إشعار بعد الاستيراد الناجح"
+  },
+  "exportSuccess": {
+    "message": "تم التصدير بنجاح",
+    "description": "رسالة إشعار بعد التصدير الناجح"
+  },
+  "errorOccurred": {
+    "message": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "description": "رسالة خطأ عامة"
+  },
+  "formatJson": {
+    "message": "تنسيق JSON",
+    "description": "زر لتنسيق نص JSON"
+  },
+  "invalidJson": {
+    "message": "صيغة JSON غير صالحة: تعذر تحليل جسم الطلب",
+    "description": "رسالة إشعار لهيكل JSON غير صالح"
+  },
+  "assertions": {
+    "message": "التحقق",
+    "description": "علامة تبويب قواعد التحقق من الاستجابة"
+  },
+  "capture": {
+    "message": "التقاط",
+    "description": "علامة تبويب الطلبات الملتقطة"
+  },
+  "collectionsTab": {
+    "message": "المجموعات",
+    "description": "علامة تبويب المجموعات"
+  },
+  "historyTab": {
+    "message": "السجل",
+    "description": "علامة تبويب السجل"
+  },
+  "cookiesTab": {
+    "message": "الكوكيز",
+    "description": "علامة تبويب الكوكيز"
+  },
+  "send": {
+    "message": "إرسال",
+    "description": "زر إرسال الطلب"
+  },
+  "cancel": {
+    "message": "إلغاء",
+    "description": "زر الإلغاء"
+  },
+  "body": {
+    "message": "الجسم",
+    "description": "تبويب جسم الطلب/الاستجابة"
+  },
+  "params": {
+    "message": "المعاملات",
+    "description": "تبويب معاملات الاستعلام"
+  },
+  "auth": {
+    "message": "المصادقة",
+    "description": "تبويب التفويض"
+  },
+  "response": {
+    "message": "الاستجابة",
+    "description": "تسمية قسم الاستجابة"
+  },
+  "timeline": {
+    "message": "الجدول الزمني",
+    "description": "تبويب جدول زمني الاستجابة"
+  }
+}
+

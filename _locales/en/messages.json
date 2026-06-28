@@ -1,0 +1,700 @@
+{
+  "extName": {
+    "message": "PostAPI Panel",
+    "description": "Extension name displayed in Chrome"
+  },
+  "extDescription": {
+    "message": "A powerful Postman-like developer tool for Chrome. Send requests, manage collections, inspect headers, cookies, and more — right from your browser.",
+    "description": "Extension description for Chrome Web Store"
+  },
+
+  "collections": {
+    "message": "Collections",
+    "description": "Navigation tab for saved request collections"
+  },
+  "history": {
+    "message": "History",
+    "description": "Navigation tab for request history"
+  },
+  "environments": {
+    "message": "Environments",
+    "description": "Navigation tab for environment variables"
+  },
+  "cookies": {
+    "message": "Cookies",
+    "description": "Navigation tab for cookie management"
+  },
+  "settings": {
+    "message": "Settings",
+    "description": "Navigation tab for extension settings"
+  },
+  "headerManager": {
+    "message": "Header Manager",
+    "description": "Navigation tab for header modification rules"
+  },
+
+  "send": {
+    "message": "Send",
+    "description": "Button label to send an HTTP request"
+  },
+  "save": {
+    "message": "Save",
+    "description": "Button label to save a request"
+  },
+  "params": {
+    "message": "Params",
+    "description": "Tab label for query parameters"
+  },
+  "headers": {
+    "message": "Headers",
+    "description": "Tab label for request headers"
+  },
+  "body": {
+    "message": "Body",
+    "description": "Tab label for request body"
+  },
+  "auth": {
+    "message": "Auth",
+    "description": "Tab label for authentication"
+  },
+  "preRequest": {
+    "message": "Pre-request",
+    "description": "Tab label for pre-request scripts"
+  },
+  "method": {
+    "message": "Method",
+    "description": "Label for HTTP method selector"
+  },
+  "url": {
+    "message": "URL",
+    "description": "Label for request URL input"
+  },
+  "addRow": {
+    "message": "Add Row",
+    "description": "Button to add a new key-value row"
+  },
+  "removeRow": {
+    "message": "Remove Row",
+    "description": "Button to remove a key-value row"
+  },
+  "keyPlaceholder": {
+    "message": "Key",
+    "description": "Placeholder text for key input"
+  },
+  "valuePlaceholder": {
+    "message": "Value",
+    "description": "Placeholder text for value input"
+  },
+
+  "get": {
+    "message": "GET",
+    "description": "HTTP GET method"
+  },
+  "post": {
+    "message": "POST",
+    "description": "HTTP POST method"
+  },
+  "put": {
+    "message": "PUT",
+    "description": "HTTP PUT method"
+  },
+  "delete": {
+    "message": "DELETE",
+    "description": "HTTP DELETE method"
+  },
+  "patch": {
+    "message": "PATCH",
+    "description": "HTTP PATCH method"
+  },
+  "options": {
+    "message": "OPTIONS",
+    "description": "HTTP OPTIONS method"
+  },
+  "head": {
+    "message": "HEAD",
+    "description": "HTTP HEAD method"
+  },
+
+  "json": {
+    "message": "JSON",
+    "description": "Body type JSON"
+  },
+  "formData": {
+    "message": "Form Data",
+    "description": "Body type multipart form data"
+  },
+  "urlEncoded": {
+    "message": "URL Encoded",
+    "description": "Body type application/x-www-form-urlencoded"
+  },
+  "raw": {
+    "message": "Raw",
+    "description": "Body type raw text"
+  },
+  "binary": {
+    "message": "Binary",
+    "description": "Body type binary file"
+  },
+  "none": {
+    "message": "None",
+    "description": "No body / no auth"
+  },
+
+  "noAuth": {
+    "message": "No Auth",
+    "description": "Authentication type: none"
+  },
+  "bearerToken": {
+    "message": "Bearer Token",
+    "description": "Authentication type: bearer token"
+  },
+  "basicAuth": {
+    "message": "Basic Auth",
+    "description": "Authentication type: basic username/password"
+  },
+  "apiKey": {
+    "message": "API Key",
+    "description": "Authentication type: API key"
+  },
+
+  "response": {
+    "message": "Response",
+    "description": "Section title for response area"
+  },
+  "pretty": {
+    "message": "Pretty",
+    "description": "Response view mode: formatted"
+  },
+  "rawView": {
+    "message": "Raw",
+    "description": "Response view mode: raw text"
+  },
+  "preview": {
+    "message": "Preview",
+    "description": "Response view mode: HTML preview"
+  },
+  "responseHeaders": {
+    "message": "Headers",
+    "description": "Response tab for headers"
+  },
+  "responseCookies": {
+    "message": "Cookies",
+    "description": "Response tab for cookies"
+  },
+  "timeline": {
+    "message": "Timeline",
+    "description": "Response tab for request timing"
+  },
+  "statusCode": {
+    "message": "Status",
+    "description": "Label for HTTP status code"
+  },
+  "duration": {
+    "message": "Duration",
+    "description": "Label for request duration"
+  },
+  "size": {
+    "message": "Size",
+    "description": "Label for response size"
+  },
+
+  "newCollection": {
+    "message": "New Collection",
+    "description": "Button to create a new collection"
+  },
+  "newFolder": {
+    "message": "New Folder",
+    "description": "Button to create a new folder inside a collection"
+  },
+  "saveRequest": {
+    "message": "Save Request",
+    "description": "Button to save current request to a collection"
+  },
+  "importCollection": {
+    "message": "Import Collection",
+    "description": "Button to import a collection from file"
+  },
+  "exportCollection": {
+    "message": "Export Collection",
+    "description": "Button to export a collection to file"
+  },
+  "deleteCollection": {
+    "message": "Delete Collection",
+    "description": "Action to delete a collection"
+  },
+  "renameCollection": {
+    "message": "Rename Collection",
+    "description": "Action to rename a collection"
+  },
+  "duplicateCollection": {
+    "message": "Duplicate Collection",
+    "description": "Action to duplicate a collection"
+  },
+  "collectionName": {
+    "message": "Collection Name",
+    "description": "Placeholder/label for collection name input"
+  },
+  "folderName": {
+    "message": "Folder Name",
+    "description": "Placeholder/label for folder name input"
+  },
+  "requestName": {
+    "message": "Request Name",
+    "description": "Placeholder/label for request name input"
+  },
+  "noCollections": {
+    "message": "No collections yet. Create one to get started.",
+    "description": "Empty state message for collections"
+  },
+
+  "clearHistory": {
+    "message": "Clear History",
+    "description": "Button to clear all history entries"
+  },
+  "today": {
+    "message": "Today",
+    "description": "History group label for today"
+  },
+  "yesterday": {
+    "message": "Yesterday",
+    "description": "History group label for yesterday"
+  },
+  "lastWeek": {
+    "message": "Last Week",
+    "description": "History group label for last week"
+  },
+  "older": {
+    "message": "Older",
+    "description": "History group label for older entries"
+  },
+  "noHistory": {
+    "message": "No request history yet. Send a request to see it here.",
+    "description": "Empty state message for history"
+  },
+
+  "newEnvironment": {
+    "message": "New Environment",
+    "description": "Button to create a new environment"
+  },
+  "globalVariables": {
+    "message": "Global Variables",
+    "description": "Label for global variable scope"
+  },
+  "variableName": {
+    "message": "Variable Name",
+    "description": "Placeholder for variable name input"
+  },
+  "variableValue": {
+    "message": "Variable Value",
+    "description": "Placeholder for variable value input"
+  },
+  "secretValue": {
+    "message": "Secret Value",
+    "description": "Label for masked secret variable values"
+  },
+  "activeEnvironment": {
+    "message": "Active Environment",
+    "description": "Label for the currently active environment"
+  },
+  "noEnvironments": {
+    "message": "No environments yet. Create one to manage variables.",
+    "description": "Empty state message for environments"
+  },
+
+  "addCookie": {
+    "message": "Add Cookie",
+    "description": "Button to add a new cookie"
+  },
+  "deleteCookie": {
+    "message": "Delete Cookie",
+    "description": "Button to delete a cookie"
+  },
+  "cookieName": {
+    "message": "Cookie Name",
+    "description": "Label/placeholder for cookie name"
+  },
+  "cookieValue": {
+    "message": "Cookie Value",
+    "description": "Label/placeholder for cookie value"
+  },
+  "cookieDomain": {
+    "message": "Domain",
+    "description": "Label for cookie domain"
+  },
+  "cookiePath": {
+    "message": "Path",
+    "description": "Label for cookie path"
+  },
+  "httpOnly": {
+    "message": "HttpOnly",
+    "description": "Label for HttpOnly cookie flag"
+  },
+  "secure": {
+    "message": "Secure",
+    "description": "Label for Secure cookie flag"
+  },
+  "sameSite": {
+    "message": "SameSite",
+    "description": "Label for SameSite cookie attribute"
+  },
+  "expires": {
+    "message": "Expires",
+    "description": "Label for cookie expiration date"
+  },
+  "editCookie": {
+    "message": "Edit Cookie",
+    "description": "Action to edit a cookie"
+  },
+  "cookieJar": {
+    "message": "Cookie Jar",
+    "description": "Label for cookie jar concept"
+  },
+  "saveCookieJar": {
+    "message": "Save Cookie Jar",
+    "description": "Button to save the cookie jar"
+  },
+  "loadCookieJar": {
+    "message": "Load Cookie Jar",
+    "description": "Button to load a saved cookie jar"
+  },
+
+  "headerRules": {
+    "message": "Header Rules",
+    "description": "Section title for header modification rules"
+  },
+  "addRule": {
+    "message": "Add Rule",
+    "description": "Button to add a new header rule"
+  },
+  "ruleEnabled": {
+    "message": "Rule Enabled",
+    "description": "Toggle label for enabling/disabling a rule"
+  },
+  "urlPattern": {
+    "message": "URL Pattern",
+    "description": "Label for URL match pattern in header rules"
+  },
+  "headerName": {
+    "message": "Header Name",
+    "description": "Label for header name input"
+  },
+  "headerValue": {
+    "message": "Header Value",
+    "description": "Label for header value input"
+  },
+  "actionSet": {
+    "message": "Set",
+    "description": "Header rule action: set/overwrite"
+  },
+  "actionRemove": {
+    "message": "Remove",
+    "description": "Header rule action: remove header"
+  },
+  "actionAppend": {
+    "message": "Append",
+    "description": "Header rule action: append value"
+  },
+  "headerProfiles": {
+    "message": "Header Profiles",
+    "description": "Section for saved header profiles"
+  },
+  "newProfile": {
+    "message": "New Profile",
+    "description": "Button to create a new header profile"
+  },
+  "silentMode": {
+    "message": "Silent Mode",
+    "description": "Toggle for silent header modification"
+  },
+  "advancedMode": {
+    "message": "Advanced Mode",
+    "description": "Toggle for advanced header rule options"
+  },
+
+  "replay": {
+    "message": "Replay",
+    "description": "Action to replay a request"
+  },
+  "editAndReplay": {
+    "message": "Edit & Replay",
+    "description": "Action to edit and resend a request"
+  },
+  "copyAsCurl": {
+    "message": "Copy as cURL",
+    "description": "Action to copy request as cURL command"
+  },
+  "copyAsCode": {
+    "message": "Copy as Code",
+    "description": "Action to copy request as code snippet"
+  },
+  "clearAll": {
+    "message": "Clear All",
+    "description": "Action to clear all items"
+  },
+  "cancel": {
+    "message": "Cancel",
+    "description": "Cancel button label"
+  },
+  "confirm": {
+    "message": "Confirm",
+    "description": "Confirm button label"
+  },
+  "deleteAction": {
+    "message": "Delete",
+    "description": "Delete action button label"
+  },
+  "edit": {
+    "message": "Edit",
+    "description": "Edit action button label"
+  },
+  "duplicate": {
+    "message": "Duplicate",
+    "description": "Duplicate action button label"
+  },
+  "search": {
+    "message": "Search",
+    "description": "Search input placeholder"
+  },
+  "filter": {
+    "message": "Filter",
+    "description": "Filter button/label"
+  },
+  "import_": {
+    "message": "Import",
+    "description": "Import action button"
+  },
+  "export_": {
+    "message": "Export",
+    "description": "Export action button"
+  },
+  "openFullscreen": {
+    "message": "Open Fullscreen",
+    "description": "Button to open extension in full tab"
+  },
+
+  "capturedRequests": {
+    "message": "Captured Requests",
+    "description": "Title for network capture section"
+  },
+  "noRequests": {
+    "message": "No requests captured yet. Browse a page to see network activity.",
+    "description": "Empty state for network capture"
+  },
+  "intercepting": {
+    "message": "Intercepting",
+    "description": "Status label when actively intercepting requests"
+  },
+  "paused": {
+    "message": "Paused",
+    "description": "Status label when interception is paused"
+  },
+  "startCapture": {
+    "message": "Start Capture",
+    "description": "Button to start capturing network requests"
+  },
+  "stopCapture": {
+    "message": "Stop Capture",
+    "description": "Button to stop capturing network requests"
+  },
+  "clearCaptured": {
+    "message": "Clear Captured",
+    "description": "Button to clear captured requests"
+  },
+
+  "settingsTitle": {
+    "message": "Settings",
+    "description": "Settings page title"
+  },
+  "darkMode": {
+    "message": "Dark Mode",
+    "description": "Theme option: dark"
+  },
+  "lightMode": {
+    "message": "Light Mode",
+    "description": "Theme option: light"
+  },
+  "language": {
+    "message": "Language",
+    "description": "Label for language selector"
+  },
+  "autoCleanup": {
+    "message": "Auto Cleanup",
+    "description": "Label for auto-cleanup toggle"
+  },
+  "cleanupDays": {
+    "message": "Cleanup after (days)",
+    "description": "Label for cleanup interval setting"
+  },
+  "maxHistoryItems": {
+    "message": "Max History Items",
+    "description": "Label for maximum history items setting"
+  },
+
+  "originalResponse": {
+    "message": "Original Response",
+    "description": "Label for original response in diff view"
+  },
+  "replayedResponse": {
+    "message": "Replayed Response",
+    "description": "Label for replayed response in diff view"
+  },
+  "diffView": {
+    "message": "Diff View",
+    "description": "Label for diff comparison view"
+  },
+
+  "loading": {
+    "message": "Loading...",
+    "description": "Loading state text"
+  },
+  "error": {
+    "message": "Error",
+    "description": "Error label"
+  },
+  "success": {
+    "message": "Success",
+    "description": "Success label"
+  },
+  "saved": {
+    "message": "Saved",
+    "description": "Saved confirmation"
+  },
+  "deleted": {
+    "message": "Deleted",
+    "description": "Deleted confirmation"
+  },
+  "copied": {
+    "message": "Copied",
+    "description": "Copied confirmation"
+  },
+  "name": {
+    "message": "Name",
+    "description": "Generic name label"
+  },
+  "description": {
+    "message": "Description",
+    "description": "Generic description label"
+  },
+  "created": {
+    "message": "Created",
+    "description": "Created timestamp label"
+  },
+  "updated": {
+    "message": "Updated",
+    "description": "Updated timestamp label"
+  },
+  "type": {
+    "message": "Type",
+    "description": "Generic type label"
+  },
+  "value": {
+    "message": "Value",
+    "description": "Generic value label"
+  },
+  "enabled": {
+    "message": "Enabled",
+    "description": "Enabled state label"
+  },
+  "disabled": {
+    "message": "Disabled",
+    "description": "Disabled state label"
+  },
+
+  "requestSent": {
+    "message": "Request sent successfully",
+    "description": "Toast message after sending a request"
+  },
+  "requestSaved": {
+    "message": "Request saved to collection",
+    "description": "Toast message after saving a request"
+  },
+  "collectionCreated": {
+    "message": "Collection created",
+    "description": "Toast message after creating a collection"
+  },
+  "environmentSaved": {
+    "message": "Environment saved",
+    "description": "Toast message after saving an environment"
+  },
+  "headerRuleAdded": {
+    "message": "Header rule added",
+    "description": "Toast message after adding a header rule"
+  },
+  "cookieAdded": {
+    "message": "Cookie added",
+    "description": "Toast message after adding a cookie"
+  },
+  "copiedToClipboard": {
+    "message": "Copied to clipboard",
+    "description": "Toast message after clipboard copy"
+  },
+  "importSuccess": {
+    "message": "Import successful",
+    "description": "Toast message after successful import"
+  },
+  "exportSuccess": {
+    "message": "Export successful",
+    "description": "Toast message after successful export"
+  },
+  "errorOccurred": {
+    "message": "An error occurred. Please try again.",
+    "description": "Generic error toast message"
+  },
+  "formatJson": {
+    "message": "Format JSON",
+    "description": "Button to format JSON text"
+  },
+  "invalidJson": {
+    "message": "Invalid JSON: Cannot parse request body",
+    "description": "Toast message for invalid JSON structure"
+  },
+  "assertions": {
+    "message": "Assertions",
+    "description": "Tab label for response assertions"
+  },
+  "capture": {
+    "message": "Capture",
+    "description": "Sidebar tab for captured requests"
+  },
+  "collectionsTab": {
+    "message": "Colls",
+    "description": "Sidebar tab for collections (short label)"
+  },
+  "historyTab": {
+    "message": "History",
+    "description": "Sidebar tab for history"
+  },
+  "cookiesTab": {
+    "message": "Cookies",
+    "description": "Sidebar tab for cookies"
+  },
+  "send": {
+    "message": "Send",
+    "description": "Send request button"
+  },
+  "cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  "body": {
+    "message": "Body",
+    "description": "Request/response body tab"
+  },
+  "params": {
+    "message": "Params",
+    "description": "Query parameters tab"
+  },
+  "auth": {
+    "message": "Auth",
+    "description": "Authorization tab"
+  },
+  "response": {
+    "message": "Response",
+    "description": "Response section label"
+  },
+  "timeline": {
+    "message": "Timeline",
+    "description": "Response timeline tab"
+  }
+}
+

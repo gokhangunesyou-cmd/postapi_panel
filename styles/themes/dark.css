@@ -1,0 +1,104 @@
+/* ==========================================================================
+   PostAPI Panel — Dark Theme (Default)
+   ==========================================================================
+   The dark theme uses the default values from variables.css. This file
+   exists for explicit theme-switching support. The :root values are the
+   dark theme, so this selector reinforces them under [data-theme="dark"].
+   ========================================================================== */
+
+[data-theme='dark'],
+:root {
+  /* Background */
+  --bg-main: #0f1419;
+  --bg-panel: #1a1f2e;
+  --bg-card: #232a3b;
+  --bg-hover: #2a3245;
+  --bg-active: #323a50;
+  --bg-input: #161b22;
+  --bg-tooltip: #3a4560;
+  --bg-skeleton: #232a3b;
+  --bg-skeleton-shine: #2d3548;
+  --bg-overlay: rgba(0, 0, 0, 0.55);
+
+  /* Brand */
+  --primary: #ff6b35;
+  --primary-hover: #ff8555;
+  --primary-active: #e55f2e;
+  --primary-light: rgba(255, 107, 53, 0.15);
+  --primary-border: rgba(255, 107, 53, 0.35);
+
+  /* Secondary */
+  --secondary: #7c5cff;
+  --secondary-hover: #9478ff;
+  --secondary-active: #6a4de6;
+  --secondary-light: rgba(124, 92, 255, 0.15);
+  --secondary-border: rgba(124, 92, 255, 0.35);
+
+  /* Semantic */
+  --success: #00c853;
+  --success-hover: #00e676;
+  --success-light: rgba(0, 200, 83, 0.15);
+  --success-border: rgba(0, 200, 83, 0.35);
+
+  --warning: #ffd600;
+  --warning-hover: #ffea00;
+  --warning-light: rgba(255, 214, 0, 0.15);
+  --warning-border: rgba(255, 214, 0, 0.35);
+
+  --error: #ff1744;
+  --error-hover: #ff5252;
+  --error-light: rgba(255, 23, 68, 0.15);
+  --error-border: rgba(255, 23, 68, 0.35);
+
+  --info: #2196f3;
+  --info-hover: #42a5f5;
+  --info-light: rgba(33, 150, 243, 0.15);
+  --info-border: rgba(33, 150, 243, 0.35);
+
+  /* Text */
+  --text-primary: #e8eaed;
+  --text-secondary: #9aa0a6;
+  --text-muted: #6b7280;
+  --text-inverse: #0f1419;
+  --text-link: #5ba3f5;
+  --text-link-hover: #82bfff;
+  --text-code: #e06c75;
+
+  /* Borders & Shadows */
+  --border: #2d3548;
+  --border-light: #3a4560;
+  --border-focus: var(--primary);
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-lg: rgba(0, 0, 0, 0.45);
+  --shadow-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-elevation-2: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-elevation-3: 0 8px 24px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.25);
+
+  /* HTTP Methods */
+  --method-get: #00c853;
+  --method-get-bg: rgba(0, 200, 83, 0.12);
+  --method-post: #ff6b35;
+  --method-post-bg: rgba(255, 107, 53, 0.12);
+  --method-put: #2196f3;
+  --method-put-bg: rgba(33, 150, 243, 0.12);
+  --method-delete: #ff1744;
+  --method-delete-bg: rgba(255, 23, 68, 0.12);
+  --method-patch: #7c5cff;
+  --method-patch-bg: rgba(124, 92, 255, 0.12);
+  --method-options: #9aa0a6;
+  --method-options-bg: rgba(154, 160, 166, 0.12);
+  --method-head: #ffd600;
+  --method-head-bg: rgba(255, 214, 0, 0.12);
+
+  /* Scrollbar (dark-themed) */
+  color-scheme: dark;
+}
+
+/* Dark-theme-specific scrollbar reinforcement */
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border-light);
+}

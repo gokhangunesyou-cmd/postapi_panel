@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostAPI Panel</title>
+  <link rel="stylesheet" href="../styles/variables.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <style>
+    body {
+      width: 500px;
+      height: 520px;
+      padding: 0;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      overflow: hidden;
+      margin: 0;
+      font-family: var(--font-family);
+    }
+    .popup-shell {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .popup-header {
+      background-color: var(--bg-panel);
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .popup-logo-bar {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .popup-logo-bar img {
+      width: 20px;
+      height: 20px;
+    }
+    .popup-logo-bar h1 {
+      font-size: var(--font-md);
+      font-weight: var(--weight-bold);
+      margin: 0;
+      color: var(--text-primary);
+    }
+    .target-domain {
+      font-size: var(--font-xs);
+      color: var(--text-secondary);
+      background-color: var(--bg-input);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      max-width: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-family: var(--font-mono);
+    }
+    /* Tab Navigation */
+    .popup-tabs {
+      display: flex;
+      background-color: var(--bg-panel);
+      border-bottom: 1px solid var(--border);
+    }
+    .popup-tab {
+      flex: 1;
+      padding: var(--space-2) 0;
+      text-align: center;
+      font-size: var(--font-xs);
+      font-weight: var(--weight-semibold);
+      color: var(--text-secondary);
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: none;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      border-radius: 0;
+    }
+    .popup-tab:hover {
+      color: var(--text-primary);
+      background-color: var(--bg-hover);
+    }
+    .popup-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      background-color: var(--bg-main);
+    }
+    /* Body & Content */
+    .popup-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--space-4);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .tab-pane {
+      display: none;
+      flex-direction: column;
+      gap: var(--space-3);
+      height: 100%;
+    }
+    .tab-pane.active {
+      display: flex;
+    }
+    /* Lists & Items */
+    .headers-scroll-container, .rules-scroll-container, .params-scroll-container {
+      flex: 1;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background-color: var(--bg-panel);
+      min-height: 180px;
+      max-height: 260px;
+    }
+    .data-row {
+      display: flex;
+      align-items: center;
+      padding: var(--space-2) var(--space-3);
+      border-bottom: 1px solid var(--border);
+      gap: var(--space-2);
+      font-size: var(--font-xs);
+    }
+    .data-row:last-child {
+      border-bottom: none;
+    }
+    .data-key {
+      font-family: var(--font-mono);
+      font-weight: var(--weight-bold);
+      color: var(--secondary-hover);
+      flex: 0.35;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .data-val {
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+      flex: 0.5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      user-select: all;
+    }
+    .row-actions {
+      flex: 0.15;
+      display: flex;
+      justify-content: flex-end;
+      gap: var(--space-1);
+    }
+    /* Add Rule Form */
+    .rule-form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      padding: var(--space-3);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+    .form-row {
+      display: flex;
+      gap: var(--space-2);
+    }
+    .form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+    .form-group label {
+      font-size: 10px;
+      color: var(--text-secondary);
+      font-weight: var(--weight-semibold);
+    }
+    /* Footer */
+    .popup-footer {
+      background-color: var(--bg-panel);
+      border-top: 1px solid var(--border);
+      padding: var(--space-2) var(--space-4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--font-xs);
+    }
+    .empty-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      height: 100%;
+      text-align: center;
+      padding: var(--space-4);
+      font-size: var(--font-xs);
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-shell">
+    <!-- Header -->
+    <header class="popup-header">
+      <div class="popup-logo-bar">
+        <img src="../assets/logo.png" alt="PostAPI">
+        <h1 data-i18n="extName">PostAPI Panel</h1>
+      </div>
+      <div class="target-domain" id="active-tab-domain" title="Active Tab URL">Detecting tab...</div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="popup-tabs">
+      <button class="popup-tab active" data-tab="pane-capture">Capture</button>
+      <button class="popup-tab" data-tab="pane-modify">Modify Headers</button>
+      <button class="popup-tab" data-tab="pane-params">URL Params</button>
+      <button class="popup-tab" data-tab="pane-storage">Storage & Cookies</button>
+    </nav>
+
+    <!-- Content -->
+    <main class="popup-content">
+      
+      <!-- Tab 1: Capture -->
+      <div class="tab-pane active" id="pane-capture">
+        <!-- Interception Controls -->
+        <div class="card p-3 flex items-center justify-between" style="background-color: var(--bg-card); border-color: var(--border);">
+          <div class="flex flex-col gap-0.5">
+            <span class="font-bold text-secondary" style="font-size: 12px;">Network Interception</span>
+            <span class="text-muted" style="font-size: 10px;">Intercept and inspect page headers</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="badge" id="popup-capture-badge">OFF</span>
+            <button class="btn btn-primary btn-sm" id="btn-popup-capture-toggle" style="height: 28px; font-size: 11px;">
+              Start Capture
+            </button>
+          </div>
+        </div>
+
+        <!-- Latest Captured Request Headers -->
+        <div class="flex flex-col gap-1.5 flex-1">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-primary" style="font-size: 11px;">Last Request Headers</span>
+            <span class="text-muted" id="last-req-method-url" style="font-size: 10px; font-family: var(--font-mono); max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">No requests captured yet</span>
+          </div>
+          <div class="headers-scroll-container">
+            <div id="captured-headers-list" class="h-full">
+              <div class="empty-placeholder">
+                <span>No headers captured. Trigger network calls or reload the active tab.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Modify Headers -->
+      <div class="tab-pane" id="pane-modify">
+        <div class="rules-scroll-container">
+          <div id="rules-list-container" class="h-full">
+            <div class="empty-placeholder">
+              <span>No header modifiers active for this site.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule Form -->
+        <div class="rule-form">
+          <span class="font-bold text-secondary" style="font-size: 11px; margin-bottom: 2px;">+ Add / Modify Header Rule</span>
+          <div class="form-row">
+            <div class="form-group" style="flex: 0.3;">
+              <label>Action</label>
+              <select class="select" id="rule-action" style="height: 28px; font-size: 11px; padding: 2px 6px;">
+                <option value="set">Set/Edit</option>
+                <option value="remove">Remove</option>
+                <option value="append">Append</option>
+              </select>
+            </div>
+            <div class="form-group" style="flex: 0.7;">
+              <label>Header Name</label>
+              <input type="text" class="input font-mono" id="rule-name" placeholder="Authorization" style="height: 28px; font-size: 11px;" list="common-headers-suggestions">
+            </div>
+          </div>
+          <div class="form-row" id="rule-val-row">
+            <div class="form-group">
+              <label>Header Value</label>
+              <input type="text" class="input font-mono" id="rule-value" placeholder="Bearer eyJhbGci..." style="height: 28px; font-size: 11px;">
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm w-full font-bold" id="btn-save-rule" style="height: 28px; font-size: 11px;">
+            Apply Header Modifier
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 3: URL Params -->
+      <div class="tab-pane" id="pane-params">
+        <div class="params-scroll-container">
+          <div id="params-list-container" class="h-full">
+            <div class="empty-placeholder">
+              <span>No query parameters in the active tab URL.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Param Form -->
+        <div class="rule-form">
+          <span class="font-bold text-secondary" style="font-size: 11px; margin-bottom: 2px;">+ Add Parameter to URL</span>
+          <div class="form-row">
+            <input type="text" class="input font-mono" id="new-param-key" placeholder="Key" style="height: 28px; font-size: 11px; flex: 1;">
+            <input type="text" class="input font-mono" id="new-param-value" placeholder="Value" style="height: 28px; font-size: 11px; flex: 1;">
+            <button class="btn btn-ghost btn-sm font-bold" id="btn-add-param-row" style="height: 28px; font-size: 11px; border: 1px solid var(--border);">Add</button>
+          </div>
+          <button class="btn btn-primary btn-sm w-full font-bold" id="btn-reload-params" style="height: 28px; font-size: 11px;">
+            Update URL & Reload Page
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 4: Storage & Cookies -->
+      <div class="tab-pane" id="pane-storage">
+        <div class="flex items-center gap-2">
+          <input type="text" class="input flex-1 font-mono" id="storage-search" placeholder="Search cookies & storage (e.g. token)..." style="height: 28px; font-size: 11px;">
+          <button class="btn btn-ghost btn-sm font-bold" id="btn-refresh-storage" style="height: 28px; font-size: 11px; border: 1px solid var(--border); padding: 0 10px;">🔄 Refresh</button>
+        </div>
+        <div class="rules-scroll-container" style="flex: 1; min-height: 220px; max-height: 260px;">
+          <div id="storage-list-container" class="h-full">
+            <div class="empty-placeholder">
+              <span>No cookies or storage keys found.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="popup-footer">
+      <button class="btn btn-ghost btn-sm font-bold flex items-center gap-1" id="btn-popup-open-fs" style="height: 24px; font-size: 11px; padding: 0 8px;">
+        Open Workspace ↗
+      </button>
+      <div class="text-muted" style="font-size: 10px;">PostAPI Panel v1.0.0</div>
+    </footer>
+  </div>
+
+  <!-- Autocomplete Datalist -->
+  <datalist id="common-headers-suggestions">
+    <option value="Authorization"></option>
+    <option value="Content-Type"></option>
+    <option value="Accept"></option>
+    <option value="X-API-Key"></option>
+    <option value="Cookie"></option>
+    <option value="User-Agent"></option>
+  </datalist>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

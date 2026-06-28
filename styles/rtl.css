@@ -1,0 +1,313 @@
+/* ==========================================================================
+   PostAPI Panel — RTL (Right-to-Left) Overrides
+   ==========================================================================
+   Arabic language support. Most directional properties already use CSS
+   logical properties (inline-start/end) which auto-flip in RTL. This file
+   handles edge cases and component-specific overrides.
+   ========================================================================== */
+
+/* -----------------------------------------------------------------------
+   Global RTL adjustments
+   ----------------------------------------------------------------------- */
+[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Font adjustment for Arabic — slightly larger for readability */
+[dir='rtl'] body {
+  letter-spacing: 0;
+  word-spacing: 0.02em;
+}
+
+/* -----------------------------------------------------------------------
+   Select arrow — Mirror to left side
+   ----------------------------------------------------------------------- */
+[dir='rtl'] select {
+  background-position: left 10px center;
+  padding-left: var(--space-8);
+  padding-right: var(--space-3);
+}
+
+/* -----------------------------------------------------------------------
+   Checkbox checkmark — Mirror position
+   ----------------------------------------------------------------------- */
+[dir='rtl'] input[type='checkbox']:checked::after {
+  left: auto;
+  right: 5px;
+}
+
+/* -----------------------------------------------------------------------
+   Sidebar
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .sidebar-layout {
+  border-inline-end: none;
+  border-inline-start: 1px solid var(--border);
+}
+
+[dir='rtl'] .app-layout {
+  direction: rtl;
+}
+
+/* Sidebar toggle on the left side in RTL */
+[dir='rtl'] .sidebar-toggle {
+  inset-inline-end: auto;
+  inset-inline-start: -12px;
+}
+
+/* Mobile sidebar slide direction */
+@media (max-width: 480px) {
+  [dir='rtl'] .sidebar-layout {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    transform: translateX(100%);
+  }
+
+  [dir='rtl'] .sidebar-layout.open {
+    transform: translateX(0);
+  }
+}
+
+/* -----------------------------------------------------------------------
+   Tree Items — Indent direction
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .tree-item {
+  padding-left: 0;
+}
+
+[dir='rtl'] .tree-item .tree-indent {
+  margin-left: 0;
+}
+
+/* Tree chevron — flip rotation */
+[dir='rtl'] .tree-item .tree-toggle {
+  transform: rotate(180deg);
+}
+
+[dir='rtl'] .tree-item.expanded .tree-toggle {
+  transform: rotate(90deg);
+}
+
+/* -----------------------------------------------------------------------
+   Tab Bar
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .tab-bar {
+  direction: rtl;
+}
+
+/* Tab active indicator — ensure it aligns properly */
+[dir='rtl'] .tab-item::after {
+  left: auto;
+  right: 0;
+}
+
+/* -----------------------------------------------------------------------
+   Buttons — Icon positioning
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .btn .btn-icon-start {
+  margin-left: var(--space-2);
+  margin-right: 0;
+}
+
+[dir='rtl'] .btn .btn-icon-end {
+  margin-right: var(--space-2);
+  margin-left: 0;
+}
+
+/* -----------------------------------------------------------------------
+   Badges — Position fix
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .badge-dot::before {
+  margin-left: var(--space-1-5);
+  margin-right: 0;
+}
+
+/* -----------------------------------------------------------------------
+   Dropdown & Context Menu — Open from right
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .dropdown {
+  left: auto;
+  right: 0;
+}
+
+[dir='rtl'] .dropdown.dropdown-end {
+  right: auto;
+  left: 0;
+}
+
+[dir='rtl'] .context-menu {
+  /* Position is handled in JS, but default alignment */
+  text-align: right;
+}
+
+[dir='rtl'] .dropdown-item .dropdown-icon {
+  margin-left: var(--space-2);
+  margin-right: 0;
+}
+
+[dir='rtl'] .dropdown-item .dropdown-shortcut {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* -----------------------------------------------------------------------
+   Key-Value Rows
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .key-value-row .kv-checkbox {
+  margin-left: var(--space-2);
+  margin-right: 0;
+}
+
+[dir='rtl'] .key-value-row .kv-delete {
+  margin-right: var(--space-2);
+  margin-left: 0;
+}
+
+/* -----------------------------------------------------------------------
+   Search Box — Icon position
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .search-box .search-icon {
+  left: auto;
+  right: var(--space-3);
+}
+
+[dir='rtl'] .search-box .search-input {
+  padding-right: calc(var(--space-3) + 18px + var(--space-2));
+  padding-left: var(--space-3);
+}
+
+[dir='rtl'] .search-box .search-clear {
+  right: auto;
+  left: var(--space-2);
+}
+
+/* -----------------------------------------------------------------------
+   Split Pane Handle
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .split-vertical > .split-handle {
+  cursor: col-resize;
+}
+
+/* -----------------------------------------------------------------------
+   Toolbar
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .toolbar {
+  direction: rtl;
+}
+
+/* -----------------------------------------------------------------------
+   Status Bar
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .status-bar-layout {
+  direction: rtl;
+}
+
+/* -----------------------------------------------------------------------
+   Toast Container — Flip to bottom-left
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .toast-container {
+  inset-inline-end: auto;
+  inset-inline-start: var(--space-4);
+}
+
+/* -----------------------------------------------------------------------
+   Table — Text alignment
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .table {
+  direction: rtl;
+}
+
+[dir='rtl'] .table-cell {
+  text-align: right;
+}
+
+/* -----------------------------------------------------------------------
+   Card
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .card-header .card-actions {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* -----------------------------------------------------------------------
+   Toggle Switch — Mirror
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .toggle-switch .toggle-slider::before {
+  left: auto;
+  right: 3px;
+  transition: right var(--transition-fast);
+}
+
+[dir='rtl'] .toggle-switch input:checked + .toggle-slider::before {
+  right: calc(100% - 3px - 16px);
+}
+
+/* Large toggle */
+[dir='rtl'] .toggle-switch.toggle-lg .toggle-slider::before {
+  right: 4px;
+}
+
+[dir='rtl'] .toggle-switch.toggle-lg input:checked + .toggle-slider::before {
+  right: calc(100% - 4px - 20px);
+}
+
+/* -----------------------------------------------------------------------
+   Tooltip positioning
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .tooltip[data-position='start']::after,
+[dir='rtl'] .tooltip[data-position='start']::before {
+  left: auto;
+  right: calc(100% + 8px);
+}
+
+[dir='rtl'] .tooltip[data-position='end']::after,
+[dir='rtl'] .tooltip[data-position='end']::before {
+  right: auto;
+  left: calc(100% + 8px);
+}
+
+/* -----------------------------------------------------------------------
+   Empty State
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .empty-state {
+  direction: rtl;
+}
+
+/* -----------------------------------------------------------------------
+   URL Bar — Method select order
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .request-layout .url-bar {
+  direction: rtl;
+}
+
+/* -----------------------------------------------------------------------
+   Modal — Footer alignment
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .modal-footer {
+  justify-content: flex-start;
+}
+
+/* -----------------------------------------------------------------------
+   Divider — Text position
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .divider-text {
+  direction: rtl;
+}
+
+/* -----------------------------------------------------------------------
+   Scrollbar — Move to left side in RTL
+   ----------------------------------------------------------------------- */
+[dir='rtl'] ::-webkit-scrollbar {
+  /* WebKit handles this automatically for overflow containers */
+}
+
+/* -----------------------------------------------------------------------
+   Utility overrides for directional spacing
+   ----------------------------------------------------------------------- */
+[dir='rtl'] .ms-auto {
+  margin-inline-start: auto;
+}
+
+[dir='rtl'] .me-auto {
+  margin-inline-end: auto;
+}

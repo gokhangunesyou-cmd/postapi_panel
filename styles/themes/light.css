@@ -1,0 +1,173 @@
+/* ==========================================================================
+   PostAPI Panel — Light Theme
+   ==========================================================================
+   All color tokens overridden for a clean light background. Applied via
+   [data-theme="light"] on the root element.
+   ========================================================================== */
+
+[data-theme='light'] {
+  /* Background */
+  --bg-main: #f8f9fa;
+  --bg-panel: #ffffff;
+  --bg-card: #f0f2f5;
+  --bg-hover: #e8eaed;
+  --bg-active: #dadce0;
+  --bg-input: #ffffff;
+  --bg-tooltip: #3c4043;
+  --bg-skeleton: #e8eaed;
+  --bg-skeleton-shine: #f0f2f5;
+  --bg-overlay: rgba(0, 0, 0, 0.35);
+
+  /* Brand — slightly darker for contrast on light bg */
+  --primary: #e85d2a;
+  --primary-hover: #ff6b35;
+  --primary-active: #d4522a;
+  --primary-light: rgba(232, 93, 42, 0.1);
+  --primary-border: rgba(232, 93, 42, 0.3);
+
+  /* Secondary — richer for light mode */
+  --secondary: #6a4de6;
+  --secondary-hover: #7c5cff;
+  --secondary-active: #5a3dcf;
+  --secondary-light: rgba(106, 77, 230, 0.1);
+  --secondary-border: rgba(106, 77, 230, 0.3);
+
+  /* Semantic — slightly muted for light bg */
+  --success: #00a844;
+  --success-hover: #00c853;
+  --success-light: rgba(0, 168, 68, 0.1);
+  --success-border: rgba(0, 168, 68, 0.25);
+
+  --warning: #e6c200;
+  --warning-hover: #ffd600;
+  --warning-light: rgba(230, 194, 0, 0.12);
+  --warning-border: rgba(230, 194, 0, 0.3);
+
+  --error: #e01538;
+  --error-hover: #ff1744;
+  --error-light: rgba(224, 21, 56, 0.08);
+  --error-border: rgba(224, 21, 56, 0.25);
+
+  --info: #1a73e8;
+  --info-hover: #2196f3;
+  --info-light: rgba(26, 115, 232, 0.08);
+  --info-border: rgba(26, 115, 232, 0.25);
+
+  /* Text */
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --text-muted: #9aa0a6;
+  --text-inverse: #ffffff;
+  --text-link: #1a73e8;
+  --text-link-hover: #174ea6;
+  --text-code: #c7254e;
+
+  /* Borders & Shadows */
+  --border: #dadce0;
+  --border-light: #e8eaed;
+  --border-focus: var(--primary);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-lg: rgba(0, 0, 0, 0.18);
+  --shadow-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-elevation-2: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-elevation-3: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  /* HTTP Methods — adjusted for light mode contrast */
+  --method-get: #00873a;
+  --method-get-bg: rgba(0, 135, 58, 0.08);
+  --method-post: #d4522a;
+  --method-post-bg: rgba(212, 82, 42, 0.08);
+  --method-put: #1a73e8;
+  --method-put-bg: rgba(26, 115, 232, 0.08);
+  --method-delete: #c41230;
+  --method-delete-bg: rgba(196, 18, 48, 0.08);
+  --method-patch: #6a4de6;
+  --method-patch-bg: rgba(106, 77, 230, 0.08);
+  --method-options: #5f6368;
+  --method-options-bg: rgba(95, 99, 104, 0.08);
+  --method-head: #b89e00;
+  --method-head-bg: rgba(184, 158, 0, 0.08);
+
+  /* Focus ring — darker outline for visibility */
+  --focus-ring: 0 0 0 2px var(--bg-panel), 0 0 0 4px var(--primary);
+
+  /* Color scheme */
+  color-scheme: light;
+}
+
+/* -----------------------------------------------------------------------
+   Light-mode specific overrides
+   ----------------------------------------------------------------------- */
+
+/* Scrollbar — lighter thumb */
+[data-theme='light'] ::-webkit-scrollbar-thumb {
+  background-color: #c4c7cc;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb:hover {
+  background-color: #a8abb2;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb:active {
+  background-color: #8e9199;
+}
+
+/* Firefox scrollbar */
+[data-theme='light'] * {
+  scrollbar-color: #c4c7cc transparent;
+}
+
+/* Selection */
+[data-theme='light'] ::selection {
+  background-color: rgba(232, 93, 42, 0.2);
+  color: #202124;
+}
+
+/* Code blocks — softer background */
+[data-theme='light'] code {
+  background-color: var(--bg-card);
+  border-color: var(--border);
+}
+
+[data-theme='light'] pre {
+  background-color: #f8f9fa;
+  border-color: var(--border);
+}
+
+/* Cards get subtle shadow instead of border emphasis */
+[data-theme='light'] .card {
+  box-shadow: var(--shadow-elevation-1);
+}
+
+/* Dropdown & context menu — add shadow for lift */
+[data-theme='light'] .dropdown,
+[data-theme='light'] .context-menu {
+  box-shadow: var(--shadow-elevation-2);
+}
+
+/* Modal — lighter shadow */
+[data-theme='light'] .modal-container {
+  box-shadow: var(--shadow-elevation-3);
+}
+
+/* Toast — add shadow */
+[data-theme='light'] .toast {
+  box-shadow: var(--shadow-elevation-2);
+}
+
+/* Skeleton — lighter animation */
+[data-theme='light'] .skeleton::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+}
+
+/* Kbd — cleaner look */
+[data-theme='light'] kbd {
+  background-color: var(--bg-card);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}

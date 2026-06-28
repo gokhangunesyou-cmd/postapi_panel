@@ -1,0 +1,700 @@
+{
+  "extName": {
+    "message": "PostAPI Panel",
+    "description": "Eklenti adı"
+  },
+  "extDescription": {
+    "message": "Chrome için güçlü bir Postman benzeri geliştirici aracı. İstek gönderin, koleksiyonları yönetin, başlıkları, çerezleri ve daha fazlasını doğrudan tarayıcınızdan inceleyin.",
+    "description": "Chrome Web Mağazası için eklenti açıklaması"
+  },
+
+  "collections": {
+    "message": "Koleksiyonlar",
+    "description": "Kayıtlı istek koleksiyonları sekmesi"
+  },
+  "history": {
+    "message": "Geçmiş",
+    "description": "İstek geçmişi sekmesi"
+  },
+  "environments": {
+    "message": "Ortamlar",
+    "description": "Ortam değişkenleri sekmesi"
+  },
+  "cookies": {
+    "message": "Çerezler",
+    "description": "Çerez yönetimi sekmesi"
+  },
+  "settings": {
+    "message": "Ayarlar",
+    "description": "Eklenti ayarları sekmesi"
+  },
+  "headerManager": {
+    "message": "Başlık Yöneticisi",
+    "description": "Başlık değiştirme kuralları sekmesi"
+  },
+
+  "send": {
+    "message": "Gönder",
+    "description": "HTTP isteği gönderme butonu"
+  },
+  "save": {
+    "message": "Kaydet",
+    "description": "İsteği kaydetme butonu"
+  },
+  "params": {
+    "message": "Parametreler",
+    "description": "Sorgu parametreleri sekmesi"
+  },
+  "headers": {
+    "message": "Başlıklar",
+    "description": "İstek başlıkları sekmesi"
+  },
+  "body": {
+    "message": "Gövde",
+    "description": "İstek gövdesi sekmesi"
+  },
+  "auth": {
+    "message": "Kimlik Doğrulama",
+    "description": "Kimlik doğrulama sekmesi"
+  },
+  "preRequest": {
+    "message": "Ön İstek",
+    "description": "Ön istek betikleri sekmesi"
+  },
+  "method": {
+    "message": "Metot",
+    "description": "HTTP metot seçici etiketi"
+  },
+  "url": {
+    "message": "URL",
+    "description": "İstek URL giriş etiketi"
+  },
+  "addRow": {
+    "message": "Satır Ekle",
+    "description": "Yeni anahtar-değer satırı ekleme butonu"
+  },
+  "removeRow": {
+    "message": "Satır Kaldır",
+    "description": "Anahtar-değer satırı kaldırma butonu"
+  },
+  "keyPlaceholder": {
+    "message": "Anahtar",
+    "description": "Anahtar girişi için yer tutucu metin"
+  },
+  "valuePlaceholder": {
+    "message": "Değer",
+    "description": "Değer girişi için yer tutucu metin"
+  },
+
+  "get": {
+    "message": "GET",
+    "description": "HTTP GET metodu"
+  },
+  "post": {
+    "message": "POST",
+    "description": "HTTP POST metodu"
+  },
+  "put": {
+    "message": "PUT",
+    "description": "HTTP PUT metodu"
+  },
+  "delete": {
+    "message": "DELETE",
+    "description": "HTTP DELETE metodu"
+  },
+  "patch": {
+    "message": "PATCH",
+    "description": "HTTP PATCH metodu"
+  },
+  "options": {
+    "message": "OPTIONS",
+    "description": "HTTP OPTIONS metodu"
+  },
+  "head": {
+    "message": "HEAD",
+    "description": "HTTP HEAD metodu"
+  },
+
+  "json": {
+    "message": "JSON",
+    "description": "Gövde tipi JSON"
+  },
+  "formData": {
+    "message": "Form Verisi",
+    "description": "Gövde tipi multipart form verisi"
+  },
+  "urlEncoded": {
+    "message": "URL Kodlanmış",
+    "description": "Gövde tipi application/x-www-form-urlencoded"
+  },
+  "raw": {
+    "message": "Ham",
+    "description": "Gövde tipi ham metin"
+  },
+  "binary": {
+    "message": "İkili",
+    "description": "Gövde tipi ikili dosya"
+  },
+  "none": {
+    "message": "Yok",
+    "description": "Gövde yok / kimlik doğrulama yok"
+  },
+
+  "noAuth": {
+    "message": "Kimlik Doğrulama Yok",
+    "description": "Kimlik doğrulama tipi: yok"
+  },
+  "bearerToken": {
+    "message": "Bearer Token",
+    "description": "Kimlik doğrulama tipi: bearer token"
+  },
+  "basicAuth": {
+    "message": "Temel Kimlik Doğrulama",
+    "description": "Kimlik doğrulama tipi: temel kullanıcı adı/şifre"
+  },
+  "apiKey": {
+    "message": "API Anahtarı",
+    "description": "Kimlik doğrulama tipi: API anahtarı"
+  },
+
+  "response": {
+    "message": "Yanıt",
+    "description": "Yanıt alanı bölüm başlığı"
+  },
+  "pretty": {
+    "message": "Düzenli",
+    "description": "Yanıt görünümü: biçimlendirilmiş"
+  },
+  "rawView": {
+    "message": "Ham",
+    "description": "Yanıt görünümü: ham metin"
+  },
+  "preview": {
+    "message": "Önizleme",
+    "description": "Yanıt görünümü: HTML önizleme"
+  },
+  "responseHeaders": {
+    "message": "Başlıklar",
+    "description": "Yanıt başlıkları sekmesi"
+  },
+  "responseCookies": {
+    "message": "Çerezler",
+    "description": "Yanıt çerezleri sekmesi"
+  },
+  "timeline": {
+    "message": "Zaman Çizelgesi",
+    "description": "İstek zamanlama sekmesi"
+  },
+  "statusCode": {
+    "message": "Durum",
+    "description": "HTTP durum kodu etiketi"
+  },
+  "duration": {
+    "message": "Süre",
+    "description": "İstek süresi etiketi"
+  },
+  "size": {
+    "message": "Boyut",
+    "description": "Yanıt boyutu etiketi"
+  },
+
+  "newCollection": {
+    "message": "Yeni Koleksiyon",
+    "description": "Yeni koleksiyon oluşturma butonu"
+  },
+  "newFolder": {
+    "message": "Yeni Klasör",
+    "description": "Koleksiyon içinde yeni klasör oluşturma butonu"
+  },
+  "saveRequest": {
+    "message": "İsteği Kaydet",
+    "description": "Mevcut isteği koleksiyona kaydetme butonu"
+  },
+  "importCollection": {
+    "message": "Koleksiyonu İçe Aktar",
+    "description": "Dosyadan koleksiyon içe aktarma butonu"
+  },
+  "exportCollection": {
+    "message": "Koleksiyonu Dışa Aktar",
+    "description": "Koleksiyonu dosyaya dışa aktarma butonu"
+  },
+  "deleteCollection": {
+    "message": "Koleksiyonu Sil",
+    "description": "Koleksiyonu silme eylemi"
+  },
+  "renameCollection": {
+    "message": "Koleksiyonu Yeniden Adlandır",
+    "description": "Koleksiyonu yeniden adlandırma eylemi"
+  },
+  "duplicateCollection": {
+    "message": "Koleksiyonu Çoğalt",
+    "description": "Koleksiyonu çoğaltma eylemi"
+  },
+  "collectionName": {
+    "message": "Koleksiyon Adı",
+    "description": "Koleksiyon adı girişi için yer tutucu/etiket"
+  },
+  "folderName": {
+    "message": "Klasör Adı",
+    "description": "Klasör adı girişi için yer tutucu/etiket"
+  },
+  "requestName": {
+    "message": "İstek Adı",
+    "description": "İstek adı girişi için yer tutucu/etiket"
+  },
+  "noCollections": {
+    "message": "Henüz koleksiyon yok. Başlamak için bir tane oluşturun.",
+    "description": "Koleksiyonlar için boş durum mesajı"
+  },
+
+  "clearHistory": {
+    "message": "Geçmişi Temizle",
+    "description": "Tüm geçmiş girişlerini temizleme butonu"
+  },
+  "today": {
+    "message": "Bugün",
+    "description": "Bugünkü geçmiş grubu etiketi"
+  },
+  "yesterday": {
+    "message": "Dün",
+    "description": "Dünkü geçmiş grubu etiketi"
+  },
+  "lastWeek": {
+    "message": "Geçen Hafta",
+    "description": "Geçen haftanın geçmiş grubu etiketi"
+  },
+  "older": {
+    "message": "Daha Eski",
+    "description": "Daha eski girişlerin geçmiş grubu etiketi"
+  },
+  "noHistory": {
+    "message": "Henüz istek geçmişi yok. Burada görmek için bir istek gönderin.",
+    "description": "Geçmiş için boş durum mesajı"
+  },
+
+  "newEnvironment": {
+    "message": "Yeni Ortam",
+    "description": "Yeni ortam oluşturma butonu"
+  },
+  "globalVariables": {
+    "message": "Genel Değişkenler",
+    "description": "Genel değişken kapsamı etiketi"
+  },
+  "variableName": {
+    "message": "Değişken Adı",
+    "description": "Değişken adı girişi için yer tutucu"
+  },
+  "variableValue": {
+    "message": "Değişken Değeri",
+    "description": "Değişken değeri girişi için yer tutucu"
+  },
+  "secretValue": {
+    "message": "Gizli Değer",
+    "description": "Maskelenmiş gizli değişken değerleri etiketi"
+  },
+  "activeEnvironment": {
+    "message": "Aktif Ortam",
+    "description": "Şu anda aktif ortam etiketi"
+  },
+  "noEnvironments": {
+    "message": "Henüz ortam yok. Değişkenleri yönetmek için bir tane oluşturun.",
+    "description": "Ortamlar için boş durum mesajı"
+  },
+
+  "addCookie": {
+    "message": "Çerez Ekle",
+    "description": "Yeni çerez ekleme butonu"
+  },
+  "deleteCookie": {
+    "message": "Çerezi Sil",
+    "description": "Çerez silme butonu"
+  },
+  "cookieName": {
+    "message": "Çerez Adı",
+    "description": "Çerez adı için etiket/yer tutucu"
+  },
+  "cookieValue": {
+    "message": "Çerez Değeri",
+    "description": "Çerez değeri için etiket/yer tutucu"
+  },
+  "cookieDomain": {
+    "message": "Alan Adı",
+    "description": "Çerez alan adı etiketi"
+  },
+  "cookiePath": {
+    "message": "Yol",
+    "description": "Çerez yolu etiketi"
+  },
+  "httpOnly": {
+    "message": "HttpOnly",
+    "description": "HttpOnly çerez bayrağı etiketi"
+  },
+  "secure": {
+    "message": "Güvenli",
+    "description": "Güvenli çerez bayrağı etiketi"
+  },
+  "sameSite": {
+    "message": "SameSite",
+    "description": "SameSite çerez özniteliği etiketi"
+  },
+  "expires": {
+    "message": "Süre Sonu",
+    "description": "Çerez süre sonu tarihi etiketi"
+  },
+  "editCookie": {
+    "message": "Çerezi Düzenle",
+    "description": "Çerez düzenleme eylemi"
+  },
+  "cookieJar": {
+    "message": "Çerez Kavanozu",
+    "description": "Çerez kavanozu konsepti etiketi"
+  },
+  "saveCookieJar": {
+    "message": "Çerez Kavanozunu Kaydet",
+    "description": "Çerez kavanozunu kaydetme butonu"
+  },
+  "loadCookieJar": {
+    "message": "Çerez Kavanozunu Yükle",
+    "description": "Kayıtlı çerez kavanozunu yükleme butonu"
+  },
+
+  "headerRules": {
+    "message": "Başlık Kuralları",
+    "description": "Başlık değiştirme kuralları bölüm başlığı"
+  },
+  "addRule": {
+    "message": "Kural Ekle",
+    "description": "Yeni başlık kuralı ekleme butonu"
+  },
+  "ruleEnabled": {
+    "message": "Kural Etkin",
+    "description": "Kuralı etkinleştirme/devre dışı bırakma anahtarı"
+  },
+  "urlPattern": {
+    "message": "URL Deseni",
+    "description": "Başlık kurallarında URL eşleşme deseni etiketi"
+  },
+  "headerName": {
+    "message": "Başlık Adı",
+    "description": "Başlık adı girişi etiketi"
+  },
+  "headerValue": {
+    "message": "Başlık Değeri",
+    "description": "Başlık değeri girişi etiketi"
+  },
+  "actionSet": {
+    "message": "Ayarla",
+    "description": "Başlık kuralı eylemi: ayarla/üzerine yaz"
+  },
+  "actionRemove": {
+    "message": "Kaldır",
+    "description": "Başlık kuralı eylemi: başlığı kaldır"
+  },
+  "actionAppend": {
+    "message": "Ekle",
+    "description": "Başlık kuralı eylemi: değer ekle"
+  },
+  "headerProfiles": {
+    "message": "Başlık Profilleri",
+    "description": "Kayıtlı başlık profilleri bölümü"
+  },
+  "newProfile": {
+    "message": "Yeni Profil",
+    "description": "Yeni başlık profili oluşturma butonu"
+  },
+  "silentMode": {
+    "message": "Sessiz Mod",
+    "description": "Sessiz başlık değiştirme anahtarı"
+  },
+  "advancedMode": {
+    "message": "Gelişmiş Mod",
+    "description": "Gelişmiş başlık kuralı seçenekleri anahtarı"
+  },
+
+  "replay": {
+    "message": "Yeniden Oynat",
+    "description": "İsteği yeniden oynatma eylemi"
+  },
+  "editAndReplay": {
+    "message": "Düzenle ve Yeniden Oynat",
+    "description": "İsteği düzenleyip yeniden gönderme eylemi"
+  },
+  "copyAsCurl": {
+    "message": "cURL Olarak Kopyala",
+    "description": "İsteği cURL komutu olarak kopyalama eylemi"
+  },
+  "copyAsCode": {
+    "message": "Kod Olarak Kopyala",
+    "description": "İsteği kod parçacığı olarak kopyalama eylemi"
+  },
+  "clearAll": {
+    "message": "Tümünü Temizle",
+    "description": "Tüm öğeleri temizleme eylemi"
+  },
+  "cancel": {
+    "message": "İptal",
+    "description": "İptal butonu etiketi"
+  },
+  "confirm": {
+    "message": "Onayla",
+    "description": "Onaylama butonu etiketi"
+  },
+  "deleteAction": {
+    "message": "Sil",
+    "description": "Silme eylem butonu etiketi"
+  },
+  "edit": {
+    "message": "Düzenle",
+    "description": "Düzenleme eylem butonu etiketi"
+  },
+  "duplicate": {
+    "message": "Çoğalt",
+    "description": "Çoğaltma eylem butonu etiketi"
+  },
+  "search": {
+    "message": "Ara",
+    "description": "Arama girişi yer tutucusu"
+  },
+  "filter": {
+    "message": "Filtrele",
+    "description": "Filtreleme butonu/etiketi"
+  },
+  "import_": {
+    "message": "İçe Aktar",
+    "description": "İçe aktarma eylem butonu"
+  },
+  "export_": {
+    "message": "Dışa Aktar",
+    "description": "Dışa aktarma eylem butonu"
+  },
+  "openFullscreen": {
+    "message": "Tam Ekran Aç",
+    "description": "Eklentiyi tam sekmede açma butonu"
+  },
+
+  "capturedRequests": {
+    "message": "Yakalanan İstekler",
+    "description": "Ağ yakalama bölümü başlığı"
+  },
+  "noRequests": {
+    "message": "Henüz yakalanan istek yok. Ağ etkinliğini görmek için bir sayfa gezinin.",
+    "description": "Ağ yakalama için boş durum"
+  },
+  "intercepting": {
+    "message": "Yakalanıyor",
+    "description": "İstekler aktif olarak yakalanırken durum etiketi"
+  },
+  "paused": {
+    "message": "Duraklatıldı",
+    "description": "Yakalama duraklatıldığında durum etiketi"
+  },
+  "startCapture": {
+    "message": "Yakalamayı Başlat",
+    "description": "Ağ isteklerini yakalamayı başlatma butonu"
+  },
+  "stopCapture": {
+    "message": "Yakalamayı Durdur",
+    "description": "Ağ isteklerini yakalamayı durdurma butonu"
+  },
+  "clearCaptured": {
+    "message": "Yakalananları Temizle",
+    "description": "Yakalanan istekleri temizleme butonu"
+  },
+
+  "settingsTitle": {
+    "message": "Ayarlar",
+    "description": "Ayarlar sayfası başlığı"
+  },
+  "darkMode": {
+    "message": "Koyu Mod",
+    "description": "Tema seçeneği: koyu"
+  },
+  "lightMode": {
+    "message": "Açık Mod",
+    "description": "Tema seçeneği: açık"
+  },
+  "language": {
+    "message": "Dil",
+    "description": "Dil seçici etiketi"
+  },
+  "autoCleanup": {
+    "message": "Otomatik Temizleme",
+    "description": "Otomatik temizleme anahtarı etiketi"
+  },
+  "cleanupDays": {
+    "message": "Temizleme süresi (gün)",
+    "description": "Temizleme aralığı ayarı etiketi"
+  },
+  "maxHistoryItems": {
+    "message": "Maksimum Geçmiş Öğesi",
+    "description": "Maksimum geçmiş öğesi sayısı ayarı etiketi"
+  },
+
+  "originalResponse": {
+    "message": "Orijinal Yanıt",
+    "description": "Fark görünümünde orijinal yanıt etiketi"
+  },
+  "replayedResponse": {
+    "message": "Yeniden Oynatılmış Yanıt",
+    "description": "Fark görünümünde yeniden oynatılmış yanıt etiketi"
+  },
+  "diffView": {
+    "message": "Fark Görünümü",
+    "description": "Fark karşılaştırma görünümü etiketi"
+  },
+
+  "loading": {
+    "message": "Yükleniyor...",
+    "description": "Yükleme durumu metni"
+  },
+  "error": {
+    "message": "Hata",
+    "description": "Hata etiketi"
+  },
+  "success": {
+    "message": "Başarılı",
+    "description": "Başarı etiketi"
+  },
+  "saved": {
+    "message": "Kaydedildi",
+    "description": "Kayıt onayı"
+  },
+  "deleted": {
+    "message": "Silindi",
+    "description": "Silme onayı"
+  },
+  "copied": {
+    "message": "Kopyalandı",
+    "description": "Kopyalama onayı"
+  },
+  "name": {
+    "message": "Ad",
+    "description": "Genel ad etiketi"
+  },
+  "description": {
+    "message": "Açıklama",
+    "description": "Genel açıklama etiketi"
+  },
+  "created": {
+    "message": "Oluşturulma",
+    "description": "Oluşturulma zaman damgası etiketi"
+  },
+  "updated": {
+    "message": "Güncellenme",
+    "description": "Güncellenme zaman damgası etiketi"
+  },
+  "type": {
+    "message": "Tür",
+    "description": "Genel tür etiketi"
+  },
+  "value": {
+    "message": "Değer",
+    "description": "Genel değer etiketi"
+  },
+  "enabled": {
+    "message": "Etkin",
+    "description": "Etkin durum etiketi"
+  },
+  "disabled": {
+    "message": "Devre Dışı",
+    "description": "Devre dışı durum etiketi"
+  },
+
+  "requestSent": {
+    "message": "İstek başarıyla gönderildi",
+    "description": "İstek gönderildikten sonra bildirim mesajı"
+  },
+  "requestSaved": {
+    "message": "İstek koleksiyona kaydedildi",
+    "description": "İstek kaydedildikten sonra bildirim mesajı"
+  },
+  "collectionCreated": {
+    "message": "Koleksiyon oluşturuldu",
+    "description": "Koleksiyon oluşturulduktan sonra bildirim mesajı"
+  },
+  "environmentSaved": {
+    "message": "Ortam kaydedildi",
+    "description": "Ortam kaydedildikten sonra bildirim mesajı"
+  },
+  "headerRuleAdded": {
+    "message": "Başlık kuralı eklendi",
+    "description": "Başlık kuralı eklendikten sonra bildirim mesajı"
+  },
+  "cookieAdded": {
+    "message": "Çerez eklendi",
+    "description": "Çerez eklendikten sonra bildirim mesajı"
+  },
+  "copiedToClipboard": {
+    "message": "Panoya kopyalandı",
+    "description": "Panoya kopyalamadan sonra bildirim mesajı"
+  },
+  "importSuccess": {
+    "message": "İçe aktarma başarılı",
+    "description": "Başarılı içe aktarmadan sonra bildirim mesajı"
+  },
+  "exportSuccess": {
+    "message": "Dışa aktarma başarılı",
+    "description": "Başarılı dışa aktarmadan sonra bildirim mesajı"
+  },
+  "errorOccurred": {
+    "message": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "description": "Genel hata bildirim mesajı"
+  },
+  "formatJson": {
+    "message": "JSON Biçimlendir",
+    "description": "JSON metnini biçimlendirme butonu"
+  },
+  "invalidJson": {
+    "message": "Geçersiz JSON: İstek gövdesi ayrıştırılamıyor",
+    "description": "Geçersiz JSON yapısı için bildirim mesajı"
+  },
+  "assertions": {
+    "message": "Doğrulamalar",
+    "description": "Yanıt doğrulama kuralları sekmesi"
+  },
+  "capture": {
+    "message": "Yakala",
+    "description": "Yakalanan istekler sekmesi"
+  },
+  "collectionsTab": {
+    "message": "Kols.",
+    "description": "Koleksiyonlar sekmesi (kısa)"
+  },
+  "historyTab": {
+    "message": "Geçmiş",
+    "description": "Geçmiş sekmesi"
+  },
+  "cookiesTab": {
+    "message": "Çerezler",
+    "description": "Çerezler sekmesi"
+  },
+  "send": {
+    "message": "Gönder",
+    "description": "İstek gönder butonu"
+  },
+  "cancel": {
+    "message": "İptal",
+    "description": "İptal butonu"
+  },
+  "body": {
+    "message": "Gövde",
+    "description": "İstek/yanıt gövdesi sekmesi"
+  },
+  "params": {
+    "message": "Parametreler",
+    "description": "Sorgu parametreleri sekmesi"
+  },
+  "auth": {
+    "message": "Yetki",
+    "description": "Yetkilendirme sekmesi"
+  },
+  "response": {
+    "message": "Yanıt",
+    "description": "Yanıt bölümü etiketi"
+  },
+  "timeline": {
+    "message": "Zaman Tray",
+    "description": "Yanıt zamançizelgesi sekmesi"
+  }
+}
+

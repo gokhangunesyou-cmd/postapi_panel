@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ZIP files (don't track built artifacts)
+*.zip
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
+*.log
