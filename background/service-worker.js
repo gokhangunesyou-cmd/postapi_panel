@@ -155,6 +155,11 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         const tabId = sender.tab?.id;
         if (!tabId) return { success: false };
 
+        // Only capture and broadcast requests if capturing is active for this tab
+        if (!activeDebugTabs.has(tabId)) {
+          return { success: false };
+        }
+
         if (!capturedRequests.has(tabId)) {
           capturedRequests.set(tabId, []);
         }
