@@ -198,7 +198,7 @@ function renderAppShell() {
           <span id="status-text">Ready</span>
         </div>
         <div class="status-right font-mono" style="font-size: 10px;">
-          PostAPI Panel v1.0.0
+          PostAPI Panel v1.0.1
         </div>
       </footer>
 
